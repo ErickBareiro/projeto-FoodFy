@@ -5,9 +5,7 @@
 }
 
 body {
-    width: 940px;
     font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
 }
 
 header {
@@ -15,6 +13,8 @@ header {
 }
 
 .links {
+    width: 940px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -31,6 +31,8 @@ header {
 }
 
 section {
+    width: 940px;
+    margin: 0 auto;
     background-color: #FBDFDB;
     border-radius: 30px;
     max-width: 940px;
@@ -38,5 +40,93 @@ section {
 }
 
 .wrapper {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    max-width: 316px;
+    margin: 16vh 3vw;
+}
+
+.title h1 {
+    font-size: 32px;
+    color: #111111;
+}
+
+.title p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.chef {
+    margin-top: 9vh;
+    margin-right: 6vw;
+}
+
+/*=== MAIS ACESSADAS ===*/
+
+main h1 {
+    width: 940px;
+    margin: 0 auto;
+
+    margin-top: 50px;
+    margin-bottom: 20px;    
+    font-size: 24px;
+    color: #111111;
+}
+
+.revenues {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.revenue {
+    cursor: pointer;
+}
+
+.card-info {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card-info h3 {
+    font-size: 18px;
+    color: #111111;
+}
+
+.card-info p {
+    font-size: 16px;
+    color: #777777;
+    margin-top: 5px;
+}
+
+.card-image img {
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #EEEEEE;
+    
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center; 
 }
